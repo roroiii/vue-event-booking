@@ -3,7 +3,14 @@
     <h1 class="text-4xl font-medium">Event Booking</h1>
     <h2 class="text-2xl font-medium">All Events</h2>
     <section class="grid grid-cols-2 gap-8">
-      <EventCard v-for="i in 8" :Key="i" />
+      <EventCard
+        v-for="i in 8"
+        :Key="i"
+        title="aaa"
+        when="2025-03-11"
+        description="bbb"
+        @readMore="console.log('123')"
+      />
     </section>
     <h2 class="text-2xl font-medium">Your Bookings</h2>
   </main>
