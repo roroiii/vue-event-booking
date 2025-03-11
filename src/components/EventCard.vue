@@ -4,17 +4,20 @@
     <p class="p-4 border-b border-gray-200">{{ when }}</p>
     <p class="p-4">{{ description }}</p>
     <section class="flex justify-end p-4">
-      <button
+      <!-- <button
         class="text-sm font-medium border border-gray-200 rounded-full px-3 py-1 hover:bg-gray-200"
         @click="$emit('readMore')"
       >
         ReadMore
-      </button>
+      </button> -->
+      <ReadButton label="ReadMore" @click="$emit('readMore')" />
     </section>
   </div>
 </template>
 
 <script setup>
+import ReadButton from './ReadButton.vue';
+
 defineProps({
   title: String,
   when: String,
