@@ -1,11 +1,11 @@
 <template>
-  <RoundedCard>
+  <SectionCard>
     <div class="p-4">booking</div>
-  </RoundedCard>
+  </SectionCard>
 </template>
 
 <script setup>
-import RoundedCard from './RoundedCard.vue';
+import SectionCard from './SectionCard.vue';
 
 defineProps({
   title: String,

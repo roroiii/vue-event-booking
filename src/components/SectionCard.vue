@@ -1,15 +1,15 @@
 <template>
   <RoundedCard>
-    <h3 class="p-4 font-medium text-xl border-b border-gray-200">
+    <h3 v-if="$slots.header" class="p-4 font-medium text-xl border-b border-gray-200">
       <slot name="header"></slot>
     </h3>
-    <p class="p-4 border-b border-gray-200">
+    <p v-if="$slots.when" class="p-4 border-b border-gray-200">
       <slot name="when"></slot>
     </p>
-    <p class="p-4">
+    <p :class="{ 'p-4': $slots.footer }">
       <slot></slot>
     </p>
-    <section class="flex justify-end p-4">
+    <section v-if="$slots.footer" class="flex justify-end p-4">
       <slot name="footer"></slot>
     </section>
   </RoundedCard>
