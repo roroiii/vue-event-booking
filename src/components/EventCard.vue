@@ -10,7 +10,7 @@
       >
         ReadMore
       </button> -->
-      <ReadButton label="ReadMore" @click="$emit('readMore')" />
+      <ReadButton @click="$emit('readMore')">ReadMore</ReadButton>
     </section>
   </div>
 </template>
