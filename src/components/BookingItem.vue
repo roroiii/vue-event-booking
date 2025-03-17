@@ -1,7 +1,8 @@
 <template>
   <SectionCard>
     <div class="flex justify-between">
-      <div>booking</div>
+      <div>{{ title }}</div>
+      <div>{{ when }}</div>
       <ReadButton variant="danger"> Cancel </ReadButton>
     </div>
   </SectionCard>
@@ -16,5 +17,5 @@ defineProps({
   when: String
 });
 
-defineEmits(['readMore']);
+defineEmits(['click']);
 </script>

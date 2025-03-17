@@ -29,5 +29,16 @@
       "location": "Convention Center, Downtown"
     }
   ],
-  "bookings": []
+  "bookings": [
+    {
+      "id": "1",
+      "title": "PHP Conference 2022",
+      "date": "2024-05-20"
+    },
+    {
+      "id": "2",
+      "title": "Rust Conference 2021",
+      "date": "2024-05-20"
+    }
+  ]
 }
