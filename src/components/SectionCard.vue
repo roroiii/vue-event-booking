@@ -6,7 +6,7 @@
     <p v-if="$slots.when" class="p-4 border-b border-gray-200">
       <slot name="when"></slot>
     </p>
-    <p :class="{ 'p-4': $slots.footer }">
+    <p :class="{ 'p-4': true }">
       <slot></slot>
     </p>
     <section v-if="$slots.footer" class="flex justify-end p-4">

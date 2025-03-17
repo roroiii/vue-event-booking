@@ -1,10 +1,14 @@
 <template>
   <SectionCard>
-    <div class="p-4">booking</div>
+    <div class="flex justify-between">
+      <div>booking</div>
+      <ReadButton variant="danger"> Cancel </ReadButton>
+    </div>
   </SectionCard>
 </template>
 
 <script setup>
+import ReadButton from './ReadButton.vue';
 import SectionCard from './SectionCard.vue';
 
 defineProps({
