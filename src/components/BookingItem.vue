@@ -5,7 +5,7 @@
         <div>{{ title }}</div>
         <div>{{ status }}</div>
       </div>
-      <ReadButton variant="danger">Cancel</ReadButton>
+      <ReadButton variant="danger" @click="$emit('cancelled')">Cancel</ReadButton>
     </div>
   </SectionCard>
 </template>
@@ -19,5 +19,5 @@ defineProps({
   status: String
 });
 
-defineEmits(['click']);
+defineEmits(['cancelled']);
 </script>
