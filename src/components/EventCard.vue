@@ -11,7 +11,7 @@
     {{ description }}
 
     <template #footer>
-      <ReadButton @click="$emit('readMore')">ReadMore</ReadButton>
+      <ReadButton @click="$emit('register')">Register</ReadButton>
     </template>
   </SectionCard>
 </template>
@@ -26,5 +26,5 @@ defineProps({
   description: String
 });
 
-defineEmits(['readMore']);
+defineEmits(['register']);
 </script>

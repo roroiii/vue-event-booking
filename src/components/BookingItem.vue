@@ -1,9 +1,11 @@
 <template>
   <SectionCard>
     <div class="flex justify-between">
-      <div>{{ title }}</div>
-      <div>{{ when }}</div>
-      <ReadButton variant="danger"> Cancel </ReadButton>
+      <div class="flex space-x-2">
+        <div>{{ title }}</div>
+        <div>{{ status }}</div>
+      </div>
+      <ReadButton variant="danger">Cancel</ReadButton>
     </div>
   </SectionCard>
 </template>
@@ -14,7 +16,7 @@ import SectionCard from './SectionCard.vue';
 
 defineProps({
   title: String,
-  when: String
+  status: String
 });
 
 defineEmits(['click']);
